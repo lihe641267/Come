@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lt.vs.come">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".views.FunctionActivity" />
+        <activity android:name=".views.ListViewActivity" />
+        <activity
+            android:name=".views.MusicActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <service android:name=".Sevice.MusicSevice" />
+
+        <activity android:name=".views.TextActivity" />
+        <activity android:name=".views.MovieActivity" />
+        <activity
+            android:name=".views.MoviePlayingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <service
+            android:name=".Sevice.MovieService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".views.NotificationActivity" />
+        <activity
+            android:name=".views.EventActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".views.PayKeyBoardActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".views.RefreshAndLoadActivity"></activity>
+    </application>
+
+</manifest>

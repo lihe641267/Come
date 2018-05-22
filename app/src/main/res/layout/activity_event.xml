@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_event"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.lt.vs.come.views.EventActivity">
+    <com.lt.vs.come.custom.MyViewPager
+        android:id="@+id/myviewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:id="@+id/tv_offset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:text="X偏移量：0\nY偏移量：0"
+        android:padding="20dp"/>
+    <TextView
+        android:id="@+id/tv_offset2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#00ff00"
+        android:layout_below="@+id/tv_offset"
+        android:text="X偏移量：0\nY偏移量：0"
+        android:padding="20dp"/>
+    <com.lt.vs.come.custom.MyView
+        android:id="@+id/myview"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#00ff00"
+        android:layout_centerInParent="true"/>
+    <com.lt.vs.come.custom.PasswordInputView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_below="@id/myview"
+        android:background="#00ff00"
+        android:layout_centerHorizontal="true"/>
+    <com.lt.vs.come.custom.ContactBannerView
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>
